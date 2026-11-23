@@ -151,13 +151,13 @@ code {
 
 .main-nav a{
     font-family: America, sans-serif;
-    color: rgb(0, 26, 30);
+    color: #050505;
     text-decoration: none;
     transition: color 0.5s ease;
 }
 
 .main-nav a:hover, .main-nav a:focus {
-    color: rgb(255, 108, 7);
+    color: #2C54DA;
     text-decoration: underline;
 }
 
@@ -234,7 +234,7 @@ footer{
   height: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #3EA5DC;
+  background-color: #43A0E3;
 }
 
 /* Fade in overlay on hover */
@@ -288,9 +288,11 @@ footer{
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
-  color: rgb(44, 21, 8);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: #050505;
   background-color: transparent;
-  border: 1px solid rgb(44, 21, 8);
+  border: 1px solid #050505;
   border-radius: 2rem;
   text-decoration: none;
   transition-property: background-color; 
@@ -298,19 +300,19 @@ footer{
 }
 
 .button-nav:hover, .button-nav:focus {
-  color: rgb(237,234,225);
-  background: linear-gradient(to bottom right, rgb(86, 197, 211), rgb(179, 221, 75));
+  color: white;
+  background: linear-gradient(to bottom right, #2C54DA, #43A0E3);
  
 }
 
 .in-text{
-  color: rgb(86, 197, 211);
+  color: #050505;
   text-decoration: none;
   
 }
 /* add different hover and focus state styling to the in-text link*/
 .in-text:hover, .in-text:focus{
-  color: rgb(255, 108, 7);
+  color: #2C54DA;
   text-decoration: underline;
 
 }
