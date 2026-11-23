@@ -5,9 +5,8 @@
   <head>
 
     <meta charset="utf-8">
-    <title>TeaTime-StyleGuide</title>
+    <title>Portfolio-StyleGuide</title>
 
-    <!-- <link href="../css/styleguide.css" rel="stylesheet"> -->
     <link href="../css/main.css" rel="stylesheet">
 
   </head>
@@ -15,26 +14,7 @@
   <body>
 
     <header id="home"> 
-      <!-- <div class="header">
 
-        <nav class="logo">
-          <a href="/index.html">
-            <img src="/img/icons/logo.png" alt="TeaTime logo" width="80">
-          </a>
-        </nav>
-
-        <nav class="main-nav">        
-        
-          <a href="../iat339_p02/index.html#menu">Menu</a>
-          <a href="../iat339_p02/about.html">About Us</a>
-          <a href="../iat339_p02/event.html">Events</a>
-
-          <a href="../iat339_p02/checkout.html">
-            <img src="../iat339_p02/img/icons/cart.png" alt="Checkout" width="20">
-          </a>
-
-        </nav>
-      </div> -->
 
       <div class="element">
 
@@ -104,82 +84,6 @@
 
 
       <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-
-        <h4>CSS selector:</h4>
-        <p>input[type="submit"], input[type="reset"]</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;input type="submit" value="Submit"&gt;
-          &lt;input type="reset" value="Reset"&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-
-        <form>
-          <input type="submit" value="Submit">
-          <input type="reset" value="Reset">
-        </form>
-
-
-      </section>
-
-
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-        <h4>CSS selector:</h4>
-        <p>input[type="text"]</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;label for="customer_name"&gt;Name:&lt;/label&gt;</code>
-        <code>&lt;input type="text" id="customer_name" placeholder="Your Name"&gt;</code>
-
-        <!-- Got from Lab example -->
-        <h4>Rendered element:</h4>
-        <form>
-          <fieldset>
-            <label for="customer_name">Name:</label>
-				    <input type="text" id="customer_name" placeholder="Your Name">
-          </fieldset>
-        </form>
-
-      </section>
-
-      <!--used w3schools to learn about radio button-->
-      <section class="element">
-        <h3>Radio Button with Label</h3>
-        <h4>CSS selector:</h4>
-        <p>input[type="radio"]</p>
-
-        <h4>Sample code:</h4>
-        <code> &lt;input type="radio" id="small" name="drink_size" value="small"&gt;</code>
-        <h4>Rendered element:</h4>
-
-        <form> 
-
-          <fieldset>
-            
-            <legend>Choose your drink size:</legend>
-            <label for="small">Small</label>
-            <input type="radio" id="small" name="drink_size" value="small">
-
-            <label for="medium">Medium</label>
-            <input type="radio" id="medium" name="drink_size" value="medium">
-
-            <label for="large">Large</label>
-            <input type="radio" id="large" name="drink_size" value="large">
-
-
-
-          </fieldset>
-        </form>
-
-
-      </section>
-
-
-      <section class="element">
         <h3>Image as a Link</h3>
         <h4>CSS selector:</h4>
         <p>.img-container, .image, .overlay, .text</p>
@@ -211,12 +115,6 @@
                 </div>
             </a>
         </div>
-
-        <!-- <a href="product.html" class="image-link">
-          <img class="image" src="../html/img/coffee.jpg" alt="a cup of coffee" width="100">
-
-        </a> -->
-
 
       </section>
 
@@ -337,314 +235,11 @@
         
       </section>
 
-     <section class="element" id="product-listing">
-      
-      
-      <h3>Product Listing</h3>
-      <h4>CSS selector:</h4>
-        <p>article, article a, article a:hover, article a:focus, .productimg</p>
-
-        <h4>Sample code:</h4>
-        <code> 
-        &lt;article id="Strawberry Cake"&gt;
-        &lt;h4&gt; Strawberry Cake &lt;h4&gt;
-        &lt;p&gt;a soft, delicate, cake topped with fresh strawberries perfect for the season!&lt;p&gt;
-        &lt;p&gt;$7.00&lt;p&gt;
-        &lt;a href="product.html"&gt; View Product&lt;/a&gt;
-        &lt;article&gt;
-        
-      </code>
-      <h4>Rendered element:</h4>
-      
-
-
-      <!--used w3schools to decide when to use article vs section. Used article because the items are like one standalone thing that isn't reused-->
-      <div class="product-container">
-
-        <article id="latte">
-
-
-          <h4> Classic Latte</h4>
-
-          <div class="product-details">
-          <img class="productimg" src="../html/img/latte.jpg" alt="latte" width="100">
-          <p> a classic latte that you can never go wrong with. A classic espresso drink with hot steamed milk. </p>
-          </div>
-
-          <p>$4.50</p>
-
-          <a href="product.html">View Product</a>
-
-
-        </article>
-
-
-        <article id="cake">
-
-          <h4>Strawberry Cake</h4>
-
-          <div class="product-details">
-          <img class="productimg" src="../html/img/cake.jpg" alt="cake" width="100">
-          <p> a soft, delicate, cake topped with fresh strawberries perfect for the season!</p>
-          </div>
-
-          <p>$7.00</p>
-
-          <a href="product.html">View Product</a>
-        </article>
-      </div>
 
 
     </section>   
         
-        
-
-      <section class="element" id="payment">
-        <h3>Payment Form</h3>
-        <h4>CSS selector:</h4>
-        <p>.payment-container</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;input type="radio" id="paypal" name="payment_option" value="PAYPAL"&gt;</code>
-         <code>&lt;ilabel for="paypal"&gt;PAYPAL&lt;/label&gt;&lt;br&gt;</code>
-
-         <code>&lt;label for="card_payment"&gt;Card Information:&lt;/label&gt;</code>
-         <code>&lt;input type="text" id="card_payment" placeholder="123456789"&gt;</code>
-
-         <h4>Rendered element:</h4>
-
-
-        <p>Choose your payment option</p>
-
-        <!-- soruce: https://www.w3schools.com/html/html_forms.asp -->
-
-        <form>
-
-          <div class="payment-container">
-
-            <fieldset class="billing_address">
-              <legend>Billing Address</legend>
-
-              <!-- name -->
-              <label for="name">Name:</label><br>
-                <input type="text" id="name" placeholder="Jane Doe"><br>
-
-              <!-- email -->
-              <label for="email">Email:</label><br>
-                <input type="text" id="email" placeholder="jane@example.com"><br>
-
-              <!-- address -->
-              <label for="address">Address:</label><br>
-                <input type="text" id="address" placeholder="123 Street"><br>
-              
-              <!-- city -->
-              <label for="city">City:</label><br>
-                <input type="text" id="city" placeholder="Vancouver"><br>
-
-            </fieldset>
-            
-            <fieldset class="card_payment">
-              <legend>Payment</legend>
-
-              <!-- radio button for card options -->
-
-              <!-- visa -->
-                <input type="radio" id="visa" name="payment_option" value="VISA">
-                <label for="visa">VISA</label><br>
-
-                <!-- mastercard -->
-                <input type="radio" id="mastercard" name="payment_option" value="MASTERCARD">
-                <label for="mastercard">MASTERCARD</label><br>
-
-                <!-- paypal -->
-                <input type="radio" id="paypal" name="payment_option" value="PAYPAL">
-                <label for="paypal">PAYPAL</label><br>
-
-
-              <!-- text input for card payment -->
-
-                <!-- name on card -->
-                <label for="card_name">Name on Card:</label><br>
-                <input type="text" id="card_name" placeholder="Jane More Doe"><br>
-
-                <!-- card number -->
-                <label for="card_payment">Card Number:</label><br>
-                <input type="text" id="card_payment" placeholder="123456789"><br>
-                
-                <!-- expire date -->
-                <label for="card_exp">Card Expiry Date:</label><br>
-                <input type="text" id="card_exp" placeholder="12/34"><br>
-  
-
-            </fieldset>
-
-          </div>
-
-          <!-- submit button -->
-          <input type="submit" value="Submit">  
-
-        </form>
-
-
-
-        
-      </section>
-
-      <section class="element" id="checkout">
-        
-        <h3>Checkout Cart</h3>
-        <h4>CSS selector:</h4>
-        <p>.cart-content</p>
-
-        <h4>Sample code:</h4>
-        <code>
        
-          &lt;a href="../iat339_p02/product_listing.html"&gt;
-              &lt;img src="../iat339_p02/img/tea/matcha.png" 
-                  alt="image of matcha powder" width="100"&gt;
-          &lt;/a&gt;
-
-
-
-              &lt;h4&gt;Ceremonial Grade Matcha&lt;/h4&gt;
-              &lt;p&gt;powedered matcha all the way from Kyoto, Japan!&lt;/p&gt;
-
-
-          &lt;b&gt;$7.00&lt;/b&gt;
-          &lt;p&gt;50g&lt;/p&gt;
-
-        </code>
-        <code>
- 
-          &lt;h3&gt;Order Summary&lt;/h3&gt;
-
-          &lt;div class="pricing"&gt;
-              &lt;p&gt;Subtotal&lt;/p&gt;
-              &lt;p&gt;$14&lt;/p&gt;
-          &lt;/div&gt;
-
-
-              &lt;input type="radio" id="pickup" name="delivery_option" value="pickup"&gt;
-              &lt;label for="pickup"&gt;Pickup&lt;/label&gt;&lt;br&gt;
-
-          &lt;hr&gt;
-
-
-          &lt;a href="/checkout.html" class="add-to-cart"&gt;Checkout&lt;/a&gt;
-
-        </code>
-
-
-        <h4>Rendered element:</h4>
-        <div class="checkout">
-          <form>
-
-              <!-- source: https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
-
-              <div class="cart">
-                  <h3>Cart</h3>
-
-                  <fieldset class="cart-item">
-                      <div>
-                          <div class="cart-item-description">
-                              <!-- image as a link -->
-                              <a href="../">
-                              <img src="../img copy/tea/matcha.png" alt="image of matcha powder" width="100">
-                              </a>
-
-                              <!-- item description -->
-                              <div class="cart-product-description">
-                              <h4>Ceremonial Grade Matcha</h4>
-                              <p>powdered matcha all the way from Kyoto, Japan!</p>
-                              </div>
-                      
-                          </div>
-
-                          <!-- item cost -->
-                          <div class="cost-gram">
-                              <b>$7.00</b>
-                              <p>50g</p>
-                          </div>
-
-                      </div>
-                      <hr>
-                      <div>
-                          <div class="cart-item-description">
-                              <!-- image as a link -->
-                              <a href="/product_listing.html">
-                              <img src="../img copy/tea/matcha.png" alt="image of matcha powder" width="100">
-                              </a>
-
-                              <!-- item description -->
-                              <div class="cart-product-description">
-                              <h4>Ceremonial Grade Matcha</h4>
-                              <p>powdered matcha all the way from Kyoto, Japan!</p>
-                              </div>
-                      
-                          </div>
-
-                          <!-- item cost -->
-                          <div class="cost-gram">
-                              <b>$7.00</b>
-                              <p>50g</p>
-                          </div>
-
-                      </div>
-                      
-                  </fieldset>
-
-              </div>
-          </form>
-
-          <form>
-
-              <div class="order-summary">
-              <h3>Order Summary</h3>
-
-              <div class="pricing">
-                  <p>Subtotal</p>
-                  <p>$14</p>
-              </div>
-
-              <div class="pricing">
-                  <p>Tax</p>
-                  <p>$5</p>
-              </div>
-
-              <fieldset class="delivery-option">
-                  <!-- pickup in store or delivery -->
-
-                  <!-- pickup -->
-                  <input type="radio" id="pickup" name="delivery_option" value="pickup">
-                  <label for="pickup">Pickup</label><br>
-
-                  <!-- delivery -->
-                  <input type="radio" id="delivery" name="delivery_option" value="delivery">
-                  <label for="delivery">Delivery</label><br>
-                      
-              </fieldset>
-
-              <hr>
-
-              <div class="pricing">
-                  <b>Total</b>
-                  <p>$19</p>
-              </div>
-
-              <a href="/checkout.html" class="add-to-cart">Checkout</a>
-
-
-              </div>
-          </form>
-
-        </div>
-
-
-       
-      </section>
-
-
-    </section>
 
     <!-- brand components -->
 
@@ -659,48 +254,8 @@
       <h4>GT America Standard</h4>
       <p>GT Pressura Regular</p>
 
-      <!-- <h3>Imagery</h3>
-      <img src="../Landing.png" alt="Landing Page Illustration" width="100">
-      <img src="/img/icons/" alt="a cup of coffee" width="100">
-      <img src="../html/img/latte.jpg" alt="latte" width="100"> -->
 
     </section>
-
-    <!--feedback form-->
-    <section id="feedback">
-      <h2> Customer Feedback</h2>
-      <p>We would love to hear about your experience at TeaTime!</p>
-      <form action="#" method="post">
-        <fieldset>
-          <legend>How was your experience?</legend>
-          <p>How would you rate your visit?</p>
-
-          <input type="radio" id="bad" name="rating" value="BAD">
-          <label for="bad">BAD</label><br>
-
-          <input type="radio" id="okay" name="rating" value="OKAY">
-          <label for="okay">OKAY</label><br>
-
-          <input type="radio" id="good" name="rating" value="GOOD">
-          <label for="good">GOOD</label><br>
-
-          <label for="Details">Details:</label>
-          <input type="text" id="Details" name="feedback" placeholder="Your feedback">
-        
-
-
-        </fieldset>
-        <input type="submit" value="Submit">  
-      </form>
-
-
-
-    </section>
-
-    <section class="element" id="contact">
-      <h2>Contact Us on Instagram @TeaTime </h2>
-    </section>
-
 
 
     <!--branding ideas -->
@@ -742,68 +297,24 @@
       <ul>
         <li> Liv It Up Cafe. (2026). <strong> Latte [Image]</strong>. Retrieved from <a href="https://www.facebook.com/livitupcafe/">https://www.facebook.com/livitupcafe/</a>.</li>
 
-        <li>KamranAydinov. (2026). <strong>A top view hot espresso [Image] </strong>. Retrived from <a href="https://www.magnific.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_10186901.htm#fromView=keyword&page=1&position=1&uuid=82be45e0-7535-4d85-a8a6-3708a6bb1396&track=ais_hybrid&query=Coffee+drink">https://www.magnific.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_10186901.htm#fromView=keyword&page=1&position=1&uuid=82be45e0-7535-4d85-a8a6-3708a6bb1396&track=ais_hybrid&query=Coffee+drink</a>.</li>
-
-        <li>Wirestock. (2026). <strong> Closeup shot of a piece of delicious strawberry cake on a plate [Image] </strong>. Retrieved from <a href="https://www.magnific.com/free-photo/closeup-shot-piece-delicious-strawberry-cake-plate_17248674.htm#fromView=keyword&page=17&position=25&uuid=7d0f2b2b-8d96-4f18-a0f9-c1c702993138&track=ais_hybrid&query=Shortcake+bakery">https://www.magnific.com/free-photo/closeup-shot-piece-delicious-strawberry-cake-plate_17248674.htm#fromView=keyword&page=17&position=25&uuid=7d0f2b2b-8d96-4f18-a0f9-c1c702993138&track=ais_hybrid&query=Shortcake+bakery</a></li>
-
-        <li>Lobo, D. (2025, August 8). <strong>A cinnamon swirl pastry dusted with sugar [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/a-cinnamon-swirl-pastry-dusted-with-sugar-vy6lJ4l32go">https://unsplash.com/photos/a-cinnamon-swirl-pastry-dusted-with-sugar-vy6lJ4l32go</a>.</li>
-
-        <li>Nagaoka, T. (2020, October 14). <strong>White and red strawberry cake [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/white-and-red-strawberry-cake-fENvSZUzbzU">https://unsplash.com/photos/white-and-red-strawberry-cake-fENvSZUzbzU</a>.</li>
-
-        <li>Nguyen, P. (2019, August 14). <strong>Green powder [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/green-powder-DgW9B48pRb4">https://unsplash.com/photos/green-powder-DgW9B48pRb4</a>.</li>
-
-        <li>Rigoli, M. (2018, August 9). <strong>Loose jasmine, rose and cornflower leaf tea [Photograph]</strong>. iStock. Retrieved from <a href="https://www.istockphoto.com/photo/loose-jasmine-rose-and-cornflower-leaf-tea-gm1014818650-273155356">https://www.istockphoto.com/photo/loose-jasmine-rose-and-cornflower-leaf-tea-gm1014818650-273155356</a>.</li>
-
-        <li>A heart-shaped brooch sitting on top of a table. (n.d.). <strong>[Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/a-heart-shaped-brooch-sitting-on-top-of-a-table-4LYXkpNheHE">https://unsplash.com/photos/a-heart-shaped-brooch-sitting-on-top-of-a-table-4LYXkpNheHE</a>.</li>
-
-        <li>Sixteen Miles Out. (2025, January 29). <strong>A heart shaped bowl filled with seeds and herbs [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/a-heart-shaped-bowl-filled-with-seeds-and-herbs-zfpGkqWEG3k">https://unsplash.com/photos/a-heart-shaped-bowl-filled-with-seeds-and-herbs-zfpGkqWEG3k</a>.</li>
-
-        <li>TeaCora Rooibos. (2020, August 14). <strong>Clear drinking glass with brown liquid [Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/clear-drinking-glass-with-brown-liquid-UAvekPsMTkQ">https://unsplash.com/photos/clear-drinking-glass-with-brown-liquid-UAvekPsMTkQ</a>.</li>
-
-        <li>People dining and working in a modern cafe. (2026, January 14). <strong>[Photograph]</strong>. Unsplash. Retrieved from <a href="https://unsplash.com/photos/people-dining-and-working-in-a-modern-cafe-FffJ9XnRflo">https://unsplash.com/photos/people-dining-and-working-in-a-modern-cafe-FffJ9XnRflo</a>.</li>
-
+    
       </ul>
 
       <h3>Sources</h3>
-      <ul>
-        <li>W3Schools. (n.d.). <strong>CSS background image</strong>. <a href="https://www.w3schools.com/css/css_background_image.asp">https://www.w3schools.com/css/css_background_image.asp</a>.</li>
-
-        <li>W3Schools. (n.d.). <strong>CSS image hover effects</strong>. <a href="https://www.w3schools.com/css/css3_images_hover.asp">https://www.w3schools.com/css/css3_images_hover.asp</a>.</li>
-
-        <li>W3Schools. (n.d.). <strong>CSS borders</strong>. <a href="https://www.w3schools.com/css/css3_borders.asp">https://www.w3schools.com/css/css3_borders.asp</a>.</li>
-
-        <li>W3Schools. (n.d.). <strong>How to create a checkout form</strong>. <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a>.</li>
         
-        <li>W3Schools. (n.d.). <strong>HTML forms</strong>. <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp</a>.</li>
-      </ul>
 
       <h3> Font Credits</h3>
       <ul>
-        <li>GT America Standard Regular. Designed by Noël Leu. Grilli Type. Retrieved from <a href="https://www.grillitype.com/typeface/gt-pressura">https://www.grillitype.com/typeface/gt-pressura</a></li>
-
-        <li>Gt Pressura Regular. Designed by Dominik Huber and Marc Kappeler. Grilli Type. Retrieved from <a href="https://www.grillitype.com/typeface/gt-pressura">https://www.grillitype.com/typeface/gt-pressura</a></li>
-
+   
       </ul>
 
     </section>
 
     <footer>
-
-      <nav class="logo">
-          <a href="../iat339_p02/index.html">
-            <img src="../img copy/icons/logo.png" alt="TeaTime logo" width="80">
-          </a>
-      </nav>
-      <p>Contact us on Instagram @Teatime</p>
-
-      <nav class="main-nav">
-        <a href="../iat339_p02/P1_km/html/style_guide.html">Style Guide</a>
-        <a href="../iat339_p02/P1_km/html/style_guide.html#citations">Citations</a>
-        <a href="https://github.com/karina359/iat339_p02.git">Github</a>
-
-      </nav>
-
+        <p>sample</p>
     </footer>
+
+      
 
 
   </body>
