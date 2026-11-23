@@ -5,18 +5,18 @@
 
 /* custom font */
 @font-face {
-  font-family: America;
-  src: url(../fonts/GT-America-Standard-Regular-Trial.woff2);
+  font-family: "delight";
+  src: url(../fonts/delight-vf.ttf);
 }
 
 @font-face {
-  font-family: "America Md";
-  src: url(../fonts/GT-America-Standard-Medium-Trial.otf);
+  font-family: delight-md;
+  src: url(../fonts/delight-medium.otf);
 }
 
 @font-face {
-  font-family: Pressura;
-  src: url(../fonts/GT-Pressura-Regular-Trial.woff2);
+  font-family: cinetype;
+  src: url(../fonts/GT-Cinetype-Regular.woff2);
 }
 
 html {
@@ -26,10 +26,10 @@ html {
 body {
   /* change font  */
   /* content is from iat 235 */
-  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: cinetype, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 2rem;
-  background-color: rgb(246, 243, 234);
-  color: rgb(44, 21, 8);
+  background-color: white;
+  color: #050505;
   line-height: 1.5;
   
   padding: 0;
@@ -56,9 +56,8 @@ section{
 }
 
 h1{
-  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: delight-md, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 3rem;
-  color:rgb(44, 21, 8);
   margin-bottom: 1rem;
   margin-top:0;
 
@@ -67,39 +66,32 @@ h1{
 }
 
 h2 {
-  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: delight-md, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
-  color:rgb(44, 21, 8);
+
   /* margin-top: 6rem; */
 
 }
 
 h3 {
-  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: delight-md, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem;
-  color:rgb(44, 21, 8);
 
   /* margin-top: 1rem; */
 }
 
 h4 {
-  font-family: "America Md", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: delight-md, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 0.25rem;
 
 
 }
 
-legend{
-  font-family: America, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.25rem;
-  margin-bottom: 0.25rem;
-
-}
 
 /* Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks. */
 /* content from iat 235 */
 p {
-  font-family: Pressura;
+  font-family: cinetype;
   margin-top:0;
   max-width: 100rem;
 
